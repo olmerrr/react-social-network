@@ -1,0 +1,7 @@
+.Aside{
+  background-color: yellowgreen;
+  grid-area:aside;
+}
+.posts{
+  color: #fff;
+}

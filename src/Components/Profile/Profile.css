@@ -1,0 +1,7 @@
+.Profile{
+  background-color: rgb(119, 32, 206);
+  grid-area:profile;
+}
+.posts{
+  color:#fff;
+}
