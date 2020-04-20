@@ -1,0 +1,10 @@
+.Header{
+  background-color: green;
+  grid-area:header;
+}
+.Header__logo {
+  height: 10vmin;
+  pointer-events: none;
+}
+
+

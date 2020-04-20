@@ -1,0 +1,13 @@
+.Profile{
+  background-color: rgb(119, 32, 206);
+  grid-area:profile;
+}
+.posts{
+  color:yellow;
+}
+.main_post{
+  text-align: center;
+  margin: 0;
+  font-weight: 600;
+  font-size: 34px;
+}
