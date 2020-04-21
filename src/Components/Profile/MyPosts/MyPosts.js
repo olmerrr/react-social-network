@@ -8,9 +8,9 @@ export default props => (
       <textarea>Some text</textarea>
       <button>Add post</button>
     </div>
-      <Post message = "Hello every one"/>
-      <Post message = "Hello Frend!!"/>
-      <Post message = "Where are u from?"/>
+      <Post message = "Give more JSX" like_count = '5'/>
+      <Post message = "Hello Friend!!" like_count = '33'/>
+      <Post message = "Where are u from?" like_count = '0'/>
   </div>
 
  

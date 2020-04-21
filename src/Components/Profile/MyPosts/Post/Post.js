@@ -6,8 +6,8 @@ export default props => (
   <p>{props.message}</p>
   <img src="https://img.favpng.com/1/22/9/homer-simpson-bart-simpson-marge-simpson-lisa-simpson-png-favpng-LCcx4qNJsQjThsHZt6JCpymuy.jpg" alt="avatar"
   className={PostStyle.post_img}/>
-  <span  className={PostStyle.post_like}>Like</span>
-
+  <span  className= {PostStyle.post_like}>Like</span>
+  <span>Likes count {props.like_count}</span>
 </div>
 
   )
