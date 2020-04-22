@@ -5,9 +5,9 @@ import Header from './Components/Header/Header';
 import Aside from './Components/Aside/Aside';
 import Profile from './Components/Aside/Profile/Profile';
 import Dialogs from './Components/Dialogs/Dialogs';
-import News from './Components/Aside/News';
-import Musics from './Components/Aside/Musics';
-import Settings from './Components/Aside/Settings';
+import News from './Components/Aside/News/News';
+import Musics from './Components/Aside/Musics/Musics';
+import Settings from './Components/Aside/Settings/Settings';
 
 const App = () => {
   return (
