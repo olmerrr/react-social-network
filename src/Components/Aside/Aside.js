@@ -1,25 +1,25 @@
 import React from 'react';
-import AsideStyle from'./Aside.module.css';
+import AsideStyle from './Aside.module.css';
 
 export default props => (
-  <aside className={AsideStyle.Aside}> 
+  <aside className={AsideStyle.Aside}>
     <nav className="nav">
-      <ul className = {AsideStyle.posts}>
+      <ul className={AsideStyle.posts}>
         <li>
-          Profile
+          <a href="/profile">Profile</a>
         </li>
         <li>
-          Messages
+          <a href="/dialogs">Messages</a>  
         </li>
-        <li>
-          News
+          <li>
+            <a href="/news">News</a>  
         </li>
-        <li>
-          Music
+          <li>
+            <a href="/musics">Musics</a>  
         </li>
-        <li>
-          Settings
-        </li>
+          <li>
+            <a href="/settings">Settings</a>
+          </li>
       </ul>
     </nav>
 </aside>

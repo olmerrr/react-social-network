@@ -1,8 +1,10 @@
-.Aside{
-  background-color: yellowgreen;
-  grid-area:aside;
-}
-.posts{
-  color: #fff;
-  
-}
+.Aside { 
+  width: 300px;
+  min-height: 300px;
+  padding: 20px;
+ background-color:#c44; 
+ grid-area:aside; 
+ } 
+.posts { 
+ color: #fff; 
+ } 

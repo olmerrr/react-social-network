@@ -1,6 +1,6 @@
 .Header{
-  background-color: green;
-  grid-area:header;
+  padding: 20px;
+  background-color: #fff;
 }
 .Header__logo {
   height: 10vmin;

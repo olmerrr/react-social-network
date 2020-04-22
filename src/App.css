@@ -3,18 +3,19 @@
 ::after{
   box-sizing: border-box;
 }
-.App-wrapper {
-  max-width: 1200px;
-  padding: 0 15px;
-   display: grid;
-  grid-template-areas:
-   "header header"
-   "aside profile";
-  grid-template-rows:  60px 1fr;
-  grid-template-columns: 2fr 10fr;
-  /* grid-gap: 10px; */
+body{
+  background-color: #fff;
 }
-
+.App-wrapper {
+  max-width: 1400px;
+  padding: 0 15px;
+  margin: 0 auto;
+  
+}
+.app_inner{
+  display: flex;
+  justify-content: space-between;
+}
 ul,li {
   list-style: none;
   padding: 0;
