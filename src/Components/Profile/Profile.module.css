@@ -1,0 +1,16 @@
+.profileWrapper{
+  padding: 20px;
+  background-color: rgb(119, 32, 206);
+}
+.profileWrapper img{
+  max-width: 800px;
+}
+.posts{
+  color:yellow;
+}
+.main_post{
+  text-align: center;
+  margin: 0;
+  font-weight: 600;
+  font-size: 34px;
+}
