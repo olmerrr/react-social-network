@@ -2,6 +2,9 @@
   padding: 20px;
   background-color: rgb(119, 32, 206);
 }
+.Profile img{
+  max-width: 800px;
+}
 .posts{
   color:yellow;
 }

@@ -7,19 +7,19 @@ export default props => (
     <nav className="nav">
       <ul className={AsideStyle.posts}>
         <li>
-          <NavLink to ="/profile" activeClassName={ AsideStyle.active_link}>Profile</NavLink>
+          <NavLink to ="/profile" activeClassName={ AsideStyle.activeLink}>Profile</NavLink>
         </li>
         <li>
-          <NavLink to = "/dialogs" activeClassName={ AsideStyle.active_link}>Messages</NavLink>  
+          <NavLink to = "/dialogs" activeClassName={ AsideStyle.activeLink}>Messages</NavLink>  
         </li>
           <li>
-            <NavLink to = "/news" activeClassName={ AsideStyle.active_link}>News</NavLink>  
+            <NavLink to = "/news" activeClassName={ AsideStyle.activeLink}>News</NavLink>  
         </li>
           <li>
-            <NavLink to = "/musics"activeClassName={ AsideStyle.active_link}>Musics</NavLink>  
+            <NavLink to = "/musics"activeClassName={ AsideStyle.activeLink}>Musics</NavLink>  
         </li>
           <li>
-            <NavLink to = "/settings"activeClassName={ AsideStyle.active_link}>Settings</NavLink>
+            <NavLink to = "/settings"activeClassName={ AsideStyle.activeLink}>Settings</NavLink>
           </li>
       </ul>
     </nav>

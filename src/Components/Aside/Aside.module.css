@@ -2,8 +2,8 @@
   width: 300px;
   min-height: 300px;
   padding: 20px;
- background-color:#c44; 
- grid-area:aside; 
+  background-color:#c44; 
+  /* grid-area:aside;  */
  } 
 .posts { 
  color: #fff; 
@@ -11,7 +11,7 @@
  .links{
    color:inherit;
  }
- .active_link {
+ .activeLink {
   color:goldenrod;
 }
 li + li {
