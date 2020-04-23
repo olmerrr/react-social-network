@@ -7,4 +7,13 @@
  } 
 .posts { 
  color: #fff; 
- } 
+ }
+ .links{
+   color:inherit;
+ }
+ .active_link {
+  color:goldenrod;
+}
+li + li {
+  margin-top: 15px;
+} 

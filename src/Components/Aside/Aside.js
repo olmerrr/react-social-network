@@ -1,24 +1,25 @@
 import React from 'react';
 import AsideStyle from './Aside.module.css';
+import {NavLink} from  "react-router-dom";
 
 export default props => (
   <aside className={AsideStyle.Aside}>
     <nav className="nav">
       <ul className={AsideStyle.posts}>
         <li>
-          <a href="/profile">Profile</a>
+          <NavLink to ="/profile" activeClassName={ AsideStyle.active_link}>Profile</NavLink>
         </li>
         <li>
-          <a href="/dialogs">Messages</a>  
+          <NavLink to = "/dialogs" activeClassName={ AsideStyle.active_link}>Messages</NavLink>  
         </li>
           <li>
-            <a href="/news">News</a>  
+            <NavLink to = "/news" activeClassName={ AsideStyle.active_link}>News</NavLink>  
         </li>
           <li>
-            <a href="/musics">Musics</a>  
+            <NavLink to = "/musics"activeClassName={ AsideStyle.active_link}>Musics</NavLink>  
         </li>
           <li>
-            <a href="/settings">Settings</a>
+            <NavLink to = "/settings"activeClassName={ AsideStyle.active_link}>Settings</NavLink>
           </li>
       </ul>
     </nav>
