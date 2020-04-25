@@ -3,7 +3,6 @@ import './App.css';
 import { Route, BrowserRouter } from "react-router-dom";
 import Header from './Components/Header/Header';
 import Aside from './Components/Aside/Aside';
-// import Profile from './Components/Aside/Profile/Profile';
 import Profile from './Components/Profile/Profile.jsx';
 import Dialogs from './Components/Dialogs/Dialogs.jsx';
 import News from './Components/Aside/News/News';
