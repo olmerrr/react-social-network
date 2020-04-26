@@ -2,13 +2,13 @@
   border-radius: 50%;
   max-width: 80px;
 }
-.post_like{
+.likeCount{
   font-weight: 500;
   color: #fff;
   padding: 0 40px;
   position: relative;
 }
-.post_like::before{
+.likeCount::before{
   content: '';
   position: absolute;
   background-image: url('https://cdn0.iconfinder.com/data/icons/small-n-flat/24/678087-heart-64.png');
