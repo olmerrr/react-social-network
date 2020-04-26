@@ -5,29 +5,16 @@ import Post from './Post/Post';
 
 const MyPost = () =>{
   let postsData = [
-    {id: 1, message: 'Give more JSX', like_count: 5},
-    {id: 2, message: 'Hello Friend!!', like_count: 33},
-    {id: 3, message: 'Its new component?', like_count: 0}
+    {id: 1, message: 'Give more JSX', likeCount: 5},
+    {id: 2, message: 'Hello Friend!!', likeCount: 33},
+    {id: 3, message: 'Its new component?', likeCount: 0}
   ];
-  let dialogsElements = [
-      <Post 
-        id = {postsData[0].id} 
-        message = {postsData[0].message} 
-        like_count = {postsData[0].like_count}
-      />,
-      
-      <Post 
-        id = {postsData[1].id} 
-        message = {postsData[1].message} 
-        like_count = {postsData[1].like_count}
-      />,
-      
-      <Post 
-        id = {postsData[2].id} 
-        message = {postsData[2].message} 
-        like_count = {postsData[2].like_count}
-      />
-    ];
+  let postsElements =  postsData.map( (post) => 
+  <Post id = {post.id} 
+            message = {post.message} 
+            likeCount = {post.likeCount}
+  />
+);
     
 return(
 <div>
@@ -36,7 +23,7 @@ return(
       <textarea>Some text</textarea>
       <button>Add post</button>
     </div>
-    {dialogsElements}
+    {postsElements}
   </div>  
   )
 }
