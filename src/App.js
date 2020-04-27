@@ -9,14 +9,8 @@ import News from './Components/Aside/News/News';
 import Musics from './Components/Aside/Musics/Musics';
 import Settings from './Components/Aside/Settings/Settings';
 
-const App = () => {
-  let dialogs = [
-    {id: 1,name: 'Дима'},
-    {id: 2,name: 'Тома'},
-    {id: 3,name: 'Юлия'},
-    {id: 4,name: 'Вася'},
-    {id: 5,name: 'Мария'}
-  ];
+const App = (props) => {
+  
 
   return (
     <BrowserRouter>
@@ -25,7 +19,7 @@ const App = () => {
         <div className="app_inner">
           <Aside />
           <Route path="/dialogs" render = { () => <Dialogs/> } />
-          <Route path="/profile" render = { () => <Profile/>} />          
+          <Route path="/profile" render = { () => <Profile postsData ={props.postsData}/>} />          
           <Route path="/news" component = {News} />
           <Route path="/musics" component = {Musics} />
           <Route path="/settings" component = {Settings} />

@@ -4,8 +4,9 @@ import MyPosts from './MyPosts/MyPosts';
 import ProfileInfo from './MyPosts/ProfileInfo/ProfileInfo';
 
 export default props => (
+
   <div className={Styles.profileWrapper}>
     <ProfileInfo/>
-    <MyPosts/>
+    <MyPosts postsData = {props.postsData}/>
 </div>
 )
