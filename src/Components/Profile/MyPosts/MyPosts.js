@@ -10,13 +10,12 @@ const MyPost = (props) =>{
     {id: 2, message: 'Hello Friend!!', likeCount: 33},
     {id: 3, message: 'Why?', likeCount: 0}
   ];
-  let postsElements =  postsData.map( (post) => 
-  <Post     id = {post.id} 
-            message = {post.message} 
-            likeCount = {post.likeCount}
+  let postsElements = postsData.map( (post) => 
+  <Post id = {post.id}
+        message = { post.message }
+        likeCount = {post.likeCount}
   />
 );
-    
 return(
 <div>
      <p className={MyPostsStyle.newStylePost}> This is real post from Component</p>
@@ -24,8 +23,8 @@ return(
       {/* <textarea>Some text</textarea> */}
       {/* <button>Add post</button> */}
     {/* </div> */}
-   {postsElements} 
-  </div>  
+   {postsElements}
+  </div>
   )
 }
   export default MyPost;

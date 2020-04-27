@@ -1,0 +1,17 @@
+.dialogsWrapper{
+  display: grid;
+  grid-template-columns: 3fr 9fr;
+}
+.namesTitle,
+.messagesTitle{
+  font-weight: 500;
+  padding-bottom: 20px;
+}
+
+.namesWrapper,
+.messagesWrapper{
+  padding: 20px;  
+}
+.active {
+  color: goldenrod;
+}
