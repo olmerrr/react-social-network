@@ -4,13 +4,14 @@ import './index.css';
 import state from './Redux/state';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import { Route, BrowserRouter } from "react-router-dom";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App state = {state} 
-    />
-  </React.StrictMode>,
-  document.getElementById('root')
+
+  
+      <BrowserRouter>
+         <App state = {state}/>
+      </BrowserRouter>,document.getElementById('root')
 );
 
 // If you want your app to work offline and load faster, you can change

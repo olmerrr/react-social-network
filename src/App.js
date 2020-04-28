@@ -13,8 +13,7 @@ const App = (props) => {
   
 
   return (
-    <BrowserRouter>
-      <div className="App-wrapper">
+          <div className="App-wrapper">
         <Header />
         <div className="app_inner">
           <Aside />
@@ -25,7 +24,6 @@ const App = (props) => {
           <Route path="/settings" component = {Settings} />
         </div>
       </div>
-    </BrowserRouter>
   );
 }
 
