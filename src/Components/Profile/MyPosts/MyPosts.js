@@ -2,9 +2,7 @@ import React from 'react';
 import MyPostsStyle from './MyPosts.module.css';
 import Post from './Post/Post';
 
-
 const MyPost = (props) =>{
-
   let postsElements = props.postsData.map( (post) => 
   <Post id = {post.id}
         message = { post.message }

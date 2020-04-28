@@ -18,8 +18,8 @@ const App = (props) => {
         <Header />
         <div className="app_inner">
           <Aside />
-          <Route path="/dialogs" render = { () => <Dialogs dialogs = {props.dialogs} messages = { props.messages }/> } />
-          <Route path="/profile" render = { () => <Profile postsData ={props.postsData}/>} />          
+          <Route path="/dialogs" render = { () => <Dialogs state = {props.state.dialogsPage}/>} />
+          <Route path="/profile" render = { () => <Profile state = {props.state.profilePage}/>} />          
           <Route path="/news" component = {News} />
           <Route path="/musics" component = {Musics} />
           <Route path="/settings" component = {Settings} />
