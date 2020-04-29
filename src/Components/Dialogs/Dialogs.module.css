@@ -1,17 +1,41 @@
 .dialogsWrapper{
+  padding: 20px;
   display: grid;
   grid-template-columns: 3fr 9fr;
 }
 .namesTitle,
-.messagesTitle{
+.messagesTitle,
+.AnswerBtn{
+  font-size: 20px;
   font-weight: 500;
   padding-bottom: 20px;
 }
 
 .namesWrapper,
 .messagesWrapper{
-  padding: 20px;  
+  padding: 20px 0;  
 }
 .active {
   color: goldenrod;
+}
+.AnswerWrapper{
+  max-width: 900px;
+  padding: 20px ;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+textarea{
+  padding: 10px;
+  border: none;
+  border: 2px dashed green;
+  width: 400px;
+  margin-right: 40px;
+}
+.AnswerBtn{
+  line-height: 2px;
+  padding: 0 20px;
+  font-weight: 600;
+  border: none;
+  border: 2px dashed green;
 }

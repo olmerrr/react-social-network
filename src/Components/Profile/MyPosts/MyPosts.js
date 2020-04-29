@@ -17,7 +17,7 @@ let newPostElement = React.createRef();
 return(
 <div>
      <p className={MyPostsStyle.newStylePost}> This is real post from Component</p>
-    <div className = {MyPostsStyle.coment_container}> */}
+    <div className = {MyPostsStyle.coment_container}>
       <textarea ref = {newPostElement}>Some text</textarea>
        <button onClick = {addPost}>Add post</button> 
     </div>
