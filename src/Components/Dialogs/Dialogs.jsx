@@ -13,6 +13,14 @@ let Dialogs = (props) => {
   let messagesElements = props.state.messages.map( (message) =>
     <MessageItem message = {message.message} id = {message.id} />
   ); 
+
+
+
+  let addDialog = () => {
+    let text = newDialogElement.current.value;
+    console.log(text);
+  }
+  let newDialogElement = React.createRef();
   
   return (
     <div className={DialogsStyle.dialogsWrapper}>
@@ -23,6 +31,11 @@ let Dialogs = (props) => {
       <div className={DialogsStyle.messagesWrapper}>
         <div className={DialogsStyle.messagesTitle}>Messages</div>
         {messagesElements}       
+      </div>
+      <div>
+        <textarea ref = {newDialogElement} >
+        </textarea>
+        <button onClick = {addDialog}>Add</button>
       </div>
     </div>
   )
