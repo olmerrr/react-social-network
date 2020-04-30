@@ -3,7 +3,7 @@
 // import './index.css';
 // import App from './App';
 import {rerenderEntireTree} from './render';
-import state from './Redux/state';
+import state from './redux/state';
 
 rerenderEntireTree(state);
 
