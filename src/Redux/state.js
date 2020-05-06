@@ -2,51 +2,50 @@ import {rerenderEntireTree} from '../render';
 
 let state = {
   profilePage: {
-    postsData : [
-      {id: 1, message: 'Give more JSX', likeCount: 5},
-      {id: 2, message: 'Hello Friend!!', likeCount: 33},
-      {id: 3, message: 'Why?', likeCount: 0}
-      ],
-    newPostText: 'it-kamasutra'
-    },
-  dialogsPage: {
-    messages : [
-      {id: 1,message: "Привет, куда пропал?"},
-      {id: 2,message: "Пошли  в кино?"},
-      {id: 3,message: "цштвф ыгзук"},
-      {id: 4,message: "Скинь реферат"},
-      {id: 5,message: "Что с Юлей?"}
+    posts : [
+      {message:"Hello React", likeCounts : "22"},
+      {message:"Give more JSX", likeCounts : "8"},
+      {message:"Wood in Ukraine super!", likeCounts : "2"},
     ],
-    dialogs : [
-      {id: 1,name: 'Дима'},
-      {id: 2,name: 'Тома'},
-      {id: 3,name: 'Юлия'},
-      {id: 4,name: 'Вася'},
-      {id: 5,name: 'Мария'}
+    newPostText: 'it kamasutra'
+  },
+  DialogsPage: {
+    dialogs  : [
+      {id :'1', name: 'Maxim'},
+      {id :'2', name: 'Oxana'},
+      {id :'3', name: 'Slavik'}
+    ],
+  messages  : [
+      { message: "Дайте джазу" },
+      { message: "Куда?"},
+      { message: "Поехали на море"}
+    ]
+  },
+  sitebar:{
+    friends: [
+       { name: "Denis" }, 
+       { name: "Bogdan"},
+       { name: 'Denis Zaryada'}
     ]
   }
-  };
-  window.state = state;
-  export let addPost = () => {
-    let newPost = {
-        id: 5,
-        message: state.profilePage.newPostText,
-        likesCount: 0
-    };
-    state.profilePage.postsData.push(newPost);
-    state.profilePage.newPostText = ' ';
-    
-    rerenderEntireTree(state);
 };
 
+window.state= state;
 
-export let updateNewPostText = (newText) => {
-  
+export let addPost = ()=>{
+  let newPost = {
+    id: 5,
+    message: state.profilePage.newPostText,
+    likeCounts: 112
+  };
+  state.profilePage.posts.push(newPost);  
+  state.profilePage.newPostText = ' ';
+  rerenderEntireTree(state);
+};
+
+export let updateNewPostText = (newText)=>{
+ 
   state.profilePage.newPostText = newText;
   rerenderEntireTree(state);
-}
-
-
-
-
+};
 export default state;
