@@ -17,7 +17,8 @@ const App = (props) => {
         <Header />
         <div className="app_inner">
           <Aside />
-          <Route path="/dialogs" render = { () => <Dialogs state = {props.state.dialogsPage}/>} />
+          <Route path="/dialogs" render = { () => <Dialogs  store = {props.store}
+                                                            state = {props.state.dialogsPage}/>} />
           <Route path='/profile'
                            render={ () => 
                            <Profile
