@@ -26,7 +26,7 @@ let  store = {
       newMessageBody: ''
     },
 
-    sitebar:{
+    sidebar:{
       friends: [
          { name: "Denis" }, 
          { name: "Bogdan"},

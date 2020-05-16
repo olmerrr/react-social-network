@@ -3,6 +3,7 @@ import s from './MyPosts.module.css';
 import Post from './Post/Post';
 import {addPostActionCreator, updateNewPostTextActionCreator} from '../../../redux/profile-reducer';
 const MyPosts = (props) => {
+  debugger;
   let postsElements = props.posts.map( p=> <Post message = {p.message} likeCounts = {p.likeCounts}/>)
   let newPostElement = React.createRef();   //создаем ссылку на DOM элемент
 
