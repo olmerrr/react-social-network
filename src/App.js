@@ -11,15 +11,14 @@ import Musics from './components/Aside/Musics/Musics';
 import Settings from './components/Aside/Settings/Settings';
 
 const App = (props) => {
-  debugger;
   return (
           <div className="App-wrapper">
         <Header />
         <div className="app_inner">
           <Aside />
-          <Route path="/dialogs" render = { () => <DialogsContainer  store = {props.store}/>} />
+          <Route path="/dialogs" render = { () => <DialogsContainer/>} />
           <Route path='/profile'render={ () => 
-                           <Profile store = {props.store} /> }/>
+                           <Profile/> }/>
 
           <Route path="/news" component = {News} />
           <Route path="/musics" component = {Musics} />
