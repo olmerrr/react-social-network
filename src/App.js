@@ -4,11 +4,10 @@ import { Route, BrowserRouter } from "react-router-dom";
 import Header from './components/Header/Header';
 import Aside from './components/Aside/Aside';
 import Profile from './components/Profile/Profile.jsx';
-import DialogsContainer from './components/Dialogs/DialogsContainer';
-import Dialogs from './components/Dialogs/Dialogs.jsx';
 import News from './components/Aside/News/News';
 import Musics from './components/Aside/Musics/Musics';
 import Settings from './components/Aside/Settings/Settings';
+import DialogsContainer from './components/./Dialogs/./DialogsContainer';
 
 const App = (props) => {
   return (
