@@ -3,7 +3,7 @@ import Style from './MessageItem.module.css';
 
 let MessageItem = (props) =>{
   return (
-      <div className={Style.dialog}>{props.message}</div>
+      <div className={Style.dialog}>{props.message} </div>
   )
 }
 
