@@ -1,36 +1,38 @@
 import React from 'react';
 import style from './Users.module.css';
+import * as axios from 'axios';
+import userPhoto from '../../../src/assets/images/def-face.webp';
 let Users = (props) => {
-  if (props.users.length === 0 ){
-    props.setUsers(
-      [
-        { id: 1, imageUsers: 'https://onlinesportsblog.com/wp-content/uploads/2018/07/ryan-giggs-manchester-united-champions-league_t5ss7d1s92dg1hmyrqs7eehsa.jpg', followed: false, fullName: "Dmitry", status: "React rules", location: { city: 'Minsk', country: 'Belarus' } },
-        { id: 2, imageUsers: 'https://onlinesportsblog.com/wp-content/uploads/2018/07/ryan-giggs-manchester-united-champions-league_t5ss7d1s92dg1hmyrqs7eehsa.jpg', followed: true, fullName: "Denis", status: "I bue new car Ford Mustang", location: { city: 'Kiev', country: 'Ukraine' } },
-        { id: 3, imageUsers: 'https://onlinesportsblog.com/wp-content/uploads/2018/07/ryan-giggs-manchester-united-champions-league_t5ss7d1s92dg1hmyrqs7eehsa.jpg', followed: false, fullName: "Vovka", status: "Angular, what adout Angular?", location: { city: 'Kiev', country: 'Ukraine' } }
-      ]
-    )
-  }
+
+  if (props.users.length === 0) {
+          axios.get("https://social-network.samuraijs.com/api/1.0/users")
+                .then(response => {
+                  props.setUsers(response.data.items);
+                });
+        }
+    
+  
   return (
     <div>
       {props.users.map(u => <div key={u.id}>
         <span>
           <div>
-            <img src={u.imageUsers} alt="usersAvatar" className={style.usersAvatar} />
+            <img src={u.photos.small != null ? u.photos.small : userPhoto} alt="usersAvatar" className={style.usersAvatar} />
           </div>
           <div>
-            {u.followed ? <button onClick={() => { props.unfollow(u.id) }}>Unfollow</button>
-              : <button onClick={() => { props.follow(u.id) }}>Follow</button>}
+            {(u.followed) ? <button onClick={() => { props.unfollow(u.id) }}>Unfollow</button>
+                        : <button onClick={() => { props.follow(u.id) }}>Follow</button>}
           </div>
         </span>
         <span>
-          <div>{u.fullName}</div>
+          <div>{u.name}</div>
           <div>{u.status}</div>
         </span>
-        <span>
+        {/* <span>
           <div>{u.location.country}</div>
           <div>{u.location.city}</div>
 
-        </span>
+        </span> */}
       </div>)}
     </div>
   )
