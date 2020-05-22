@@ -13,7 +13,7 @@ export default props => (
           <NavLink to = "/dialogs" activeClassName={ AsideStyle.activeLink}>Messages</NavLink>  
         </li>
           <li>
-            <NavLink to = "/news" activeClassName={ AsideStyle.activeLink}>News</NavLink>  
+            <NavLink to = "/users" activeClassName={ AsideStyle.activeLink}>Users</NavLink>  
         </li>
           <li>
             <NavLink to = "/musics"activeClassName={ AsideStyle.activeLink}>Musics</NavLink>  
