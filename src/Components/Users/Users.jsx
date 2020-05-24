@@ -4,19 +4,16 @@ import * as axios from 'axios';
 import userPhoto from '../../../src/assets/images/def-face.webp';
 
 class Users extends React.Component{
-  constructor (props){
-    super(props);
-    
-      // if (this.props.users.length === 0) {
-              axios.get("https://social-network.samuraijs.com/api/1.0/users")
-                    .then(response => {
-                      this.props.setUsers(response.data.items);
-                    });
-            // }
-          
-    
-  
-   
+  // constructor (props){
+  //   super(props);
+  // }
+  componentDidMount(){
+//ajax req
+    axios.get("https://social-network.samuraijs.com/api/1.0/users")
+    .then(response => {
+      this.props.setUsers(response.data.items);
+    });
+//ajax req
   }
   render(){
     return (
@@ -29,7 +26,7 @@ class Users extends React.Component{
             </div>
             <div>
               {(u.followed) ? <button onClick={() => { this.this.props.unfollow(u.id) }}>Unfollow</button>
-                          : <button onClick={() => { this.this.props.follow(u.id) }}>Follow</button>}
+                            : <button onClick={() => { this.this.props.follow(u.id) }}>Follow</button>}
             </div>
           </span>
           <span>
