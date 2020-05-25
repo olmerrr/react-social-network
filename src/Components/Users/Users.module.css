@@ -1,3 +1,6 @@
 .usersAvatar {
   max-width: 120px;
 }
+.selectedPage{
+  font-weight: 700;
+}
