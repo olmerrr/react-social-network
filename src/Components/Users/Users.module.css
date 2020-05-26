@@ -1,6 +1,14 @@
 .usersAvatar {
   max-width: 120px;
 }
+.wrapperPages{
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1000px;
+}
 .selectedPage{
+  transition: all .5s;
+  cursor: pointer;
   font-weight: 700;
 }
