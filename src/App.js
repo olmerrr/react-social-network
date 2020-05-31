@@ -16,7 +16,7 @@ const App = (props) => {
         <div className="app_inner">
           <Aside />
           <Route path="/dialogs" render = { () => <DialogsContainer/>} />
-          <Route path='/profile'render={ () => <ProfileContainer/> }/>
+          <Route path='/profile/:userId?'render={ () => <ProfileContainer/> }/>
           <Route path="/users" render = {()=> <UsersContainer/>} />
           <Route path="/musics" component = {Musics} />
           <Route path="/settings" component = {Settings} />
