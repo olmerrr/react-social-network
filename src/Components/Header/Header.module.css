@@ -6,4 +6,9 @@
   height: 10vmin;
   pointer-events: none;
 }
-
+.headerContainer {
+  padding-right: 10px;
+  background-color: blanchedalmond;
+  display: flex;
+  justify-content: space-between;
+}
