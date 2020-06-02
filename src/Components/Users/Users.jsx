@@ -39,7 +39,6 @@ let Users = (props)=> {
                                 props.unfollow(u.id)
                             }
                         });
-                     
                  
                     }}>Unfollow</button>
                   : <button onClick={() => {
