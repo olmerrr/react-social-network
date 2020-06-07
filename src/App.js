@@ -8,7 +8,7 @@ import Musics from './components/Aside/Musics/Musics';
 import Settings from './components/Aside/Settings/Settings';
 import DialogsContainer from './components/./Dialogs/./DialogsContainer';
 import UsersContainer from './components/Users/UsersContainer';
-
+import Login from './components/Login/Login';
 const App = (props) => {
   return (
           <div className="App-wrapper">
@@ -20,6 +20,7 @@ const App = (props) => {
           <Route path="/users" render = {()=> <UsersContainer/>} />
           <Route path="/musics" component = {Musics} />
           <Route path="/settings" component = {Settings} />
+          <Route path="/login" component = {Login}/ >
         </div>
       </div>
   );

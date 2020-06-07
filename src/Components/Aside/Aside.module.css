@@ -5,14 +5,20 @@
   background-color:#c44; 
  } 
 .posts { 
- color: #fff; 
+ color: #fff;
+  
  }
  .links{
-   color:inherit;
+  cursor: pointer;
+  color:inherit;
  }
  .activeLink {
   color:goldenrod;
 }
 li + li {
+  
   margin-top: 15px;
+}
+li + a {
+  cursor: pointer;
 } 

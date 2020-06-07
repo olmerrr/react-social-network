@@ -10,7 +10,7 @@ const ProfileInfo = (props) => {
 }
   return (
     <div>
-      <img src = {props.profile.photos.large} alt="your_profile_avatar"  />
+      <img src = {props.profile.photos.large} alt="your_profile_avatar"/>
       <div className= {Styles.ProfileInfoInnerWrapper}>
       </div>
     </div>
