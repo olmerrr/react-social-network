@@ -4,6 +4,8 @@ import {follow, setCurrentPage, unfollow, toggleFollowingProgress} from "../../r
 import Users from "./Users";
 import Preloader from '../../common/Preloader/Preloader';
 import {getUsers} from "../../redux/users-reducer";
+import { withAuthRedirect } from './../../hoc/withAuthRedirect';
+
 class UsersContainer extends React.Component {
     
     componentDidMount() {
@@ -14,7 +16,7 @@ class UsersContainer extends React.Component {
         this.props.getUsers(pageNumber, this.props.pageSize);
         this.props.setCurrentPage(pageNumber);
     }
-
+    
     render() {
         // есть такая конструкция как <> </> без тегов
         return <div>
@@ -43,7 +45,7 @@ let mapStateToProps = (state) => {
         followingInProgress:state.usersPage.followingInProgress
     }
 }
-
+let AuthRedirectComponent = withAuthRedirect(UsersContainer);
 //connect автоматически обертывает данные 
 export default connect(mapStateToProps, {
     follow:follow,
@@ -52,4 +54,4 @@ export default connect(mapStateToProps, {
     toggleFollowingProgress: toggleFollowingProgress,
     getUsers:getUsers
     
-})(UsersContainer);
+})(AuthRedirectComponent);

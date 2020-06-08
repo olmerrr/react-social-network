@@ -2,7 +2,6 @@ import React from 'react';
 import Style from './Dialogs.module.css';
 import DialogItem from './DialogItem/DialogItem.jsx';
 import MessageItem from './MessageItem/MessageItem.jsx';
-import { Redirect } from 'react-router-dom';
 
 
 
@@ -24,9 +23,9 @@ let Dialogs = (props) => {
    };
 
   // if(props.isAuth === false) return(
-    if(!props.isAuth === false)return(
-    <Redirect to={'Login'}/>
-  )   
+  //   if(!props.isAuth === false)return(
+  //   <Redirect to={'Login'}/>
+  // )   
   return (
     <div>
       <div className={Style.dialogsWrapper}>
