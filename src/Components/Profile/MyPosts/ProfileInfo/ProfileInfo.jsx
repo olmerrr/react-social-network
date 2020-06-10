@@ -11,9 +11,8 @@ const ProfileInfo = (props) => {
   return (
     <div>
       <img src = {props.profile.photos.large} alt="your_profile_avatar"/>
-      <ProfileStatus status = {'Hello React'}/>
-      {/* <div className= {Styles.ProfileInfoInnerWrapper}>
-      </div> */}
+      <ProfileStatus status = {props.status}
+                    updateStatus = {props.updateStatus} />
     </div>
   )
 }
